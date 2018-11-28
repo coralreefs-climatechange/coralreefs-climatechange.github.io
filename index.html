@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="fullPage.js"></script>
+    <script src="jquery.ripples.js"></script>
+
+<style media="screen">
+
+  .section {
+  text-align:center;
+  font-size: 3em;
+  margin: 0;
+  }
+  body {
+    margin: 0;
+  }
+</style>
+  </head>
+
+  <body>
+
+<div id="fullpage">
+  <div id="water" class="section">
+      <div class="title"> Coral Reefs</div>
+      <div class="subtitle"> Dealing with Climate Change</div>
+      <div class="container">
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+  <span class="text">Scroll down</span>
+</div>
+    </div>
+
+<div id="bleachedreef" class="section">
+
+<div  class="title2">Looking Back: </div>
+  <div class="typewriter" id="subtitle2">
+    <h1>CARYSFORT REEF, Florida Keys</h1>
+  </div>
+      <!-- <video autoplay loop id="video-background">
+        <source src="carysfortBGvid.mp4" type="video/mp4">
+      </video> -->
+<p class="fadeIn" id="pulsate"> click ↓ </p>
+
+  <ol>
+    <li>
+      <p class="year">1975</p>
+      <span class="point"></span>
+      <div class="description">
+      <p>The reef is healthy and thriving </p>
+      <img id="image1" src="images/CF1975crop.png"> </div>
+    </li>
+    <li>
+      <p class="year">1985</p>
+      <span class="point"></span>
+      <div class="description">
+        <p>Health has declined, other marine life missing<p>
+          <img id="image2" src="images/CF1985crop.png">
+        </div>
+    </li>
+    <li>
+      <p class="year">1995</p>
+      <span class="point"></span>
+      <div class="description">
+        <p>Coral is beginning to bleach, skeleton is seen</p>
+        <img id="image3" src="images/healedreefcrop.png">
+      </div>
+
+    </li>
+    <li>
+      <p class="year">2004</p>
+        <span class="point"></span>
+        <div class="description">
+          <p>Reef is completely bleached, no signs of life</p>
+          <img id="image4" src="images/CF2004crop.png">
+        </div>
+    </li>
+    <li>
+    <p class="year">2014</p>
+      <span class="point"></span>
+      <div class="description">
+          <p> Coral is dead, the reef is destroyed</p>
+          <img id="image5" src="images/CF2014crop.png">
+      </div>
+
+    </li>
+  </ol>
+  <div class="container2">
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+  <span class="text">Scroll down</span>
+  </div>
+</div>
+    <div id="section3" class="section">
+    <div class="title3">Ocean Acidification </div>
+    <div id="explanation"><p class="paragraph"> <b>Why does it happen?</b> <br><br>
+
+Since the industrial revolution, anthropogenic Carbon Dioxide
+emissions have increased exponentially. We burn fossil fuels for
+transportation, industry, electricity, agriculture and more, and
+these processes pollute the air with CO2. The ocean absorbs a
+great majority of those emissions, causing problems for life
+underwater. As water acidity increases, more problems arise.
+<br><br>
+As CO2 accumulates, a series of chemical reactions take place that
+reduce the ocean’s pH level and lower the concentrations of carbonate
+ions and calcium carbonate minerals. This lack of carbonate makes
+it difficult for calcifying organisms like corals to grow and
+rebuild themselves. The heightened acidity further breaks down
+their skeletons and they can easily dissolve.
+  </div>
+  <div id="explanation2"><p class="paragraph2">
+  Global temperatures and Carbon Dioxide emissions are at unprecedented
+  levels. Scroll down to see how rising temperatures affect corals.
+  </div>
+
+  <video id="graph" controls autoplay loop>
+  <source src="videos/grph.mov">
+  </video>
+  <div class="container3">
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+  <span class="text">Scroll down</span>
+  </div>
+</div>
+
+
+
+<div id="section4" class="section">
+<div class="title4"> Coral Bleaching </div>
+<!-- pie chart video is after the script -->
+  <div class="blurb1"> <img src="images/blurb2.png" width=70%></div>
+  <div class="blurb2"> <img src="images/blurb1.png" width=70%></div>
+  <div class="blurb3"> <img src="images/blurb3.png" width=70%></div>
+<div class="coral1"> <img src="images/coralpiece1.png" width="200%"></div>
+<div class="coral2"> <img src="images/coralpiece2.png" width="200%"></div>
+<div class="coral3"> <img src="images/coralpiece3.png" width="200%"></div>
+  <div class="hover1"> <img src="images/hover1.png" width=205%></div>
+  <div class="hover2"> <img src="images/hover2.png" width=205%></div>
+  <div class="hover3"> <img src="images/hover3.png" width=205%></div>
+
+<div class="graphictext1"><p> 1. Coral and algae depend on each other to survive</p></div>
+<div class="graphictext2"><p>2. If stressed, algae leaves the coral</p></div>
+<div class="graphictext3"><p>3. Coral is left bleached and vulnerable </p></div>
+
+<div class="container4">
+<div class="chevron"></div>
+<div class="chevron"></div>
+<div class="chevron"></div>
+<span class="text">Scroll down</span>
+</div>
+</div>
+
+<div id="section5" class="section">
+<div class="title5"> Section Poo </div>
+
+<!--water ripples  -->
+  <script type="text/javascript">
+  $(window).load(function(){
+
+var windowSize = $(window).width(); // Could've done $(this).width()
+  if(windowSize > 600){
+    $('#fullpage').fullpage({
+      anchors: ['firstPage', 'two', 'three', 'four', 'five', 'six'],
+      scrollOverflow: true
+    });
+  }
+
+  try {
+    $('#water').ripples({
+      resolution: 512,
+      dropRadius: 30, //px
+      perturbance: 0.02,
+    });
+  }
+  catch (e) {
+    $('.error').show().text(e);
+  }
+
+//Automatic drops
+  setInterval(function() {
+    var $el = $('#water');
+    var x = Math.random() * $el.outerWidth();
+    var y = Math.random() * $el.outerHeight();
+    var dropRadius = 10;
+    var strength = 0.04 + Math.random() * 0.04;
+
+    $el.ripples('drop', x, y, dropRadius, strength);
+  }, 200);
+});
+  </script>
+
+<!-- timeline clicks -->
+<script>
+  $(document).ready(function(){
+  $(".description").click(function(){
+    console.log($(this).css("display"));
+    if($(this).attr("class") == "description"){
+      $(this).attr("class", "descriptionShown");
+
+    }else{
+      $(this).attr("class", "description");
+
+    }
+    console.log("clicked");
+  });
+
+  $("#subtitle2").hide()
+
+    setInterval(function () {
+      topOfPage = $('#fullpage').position().top;
+      if(topOfPage <= -$(document).height()){
+        $("#subtitle2").attr("class", "typewriter");
+        $("#subtitle2").show();
+      }
+
+      if (topOfPage <= -3*$(document).height()) {
+
+      }
+    }, 1000);
+
+// $("#25pie", "#33pie", "#93pie").hide()
+//
+//     setInterval(function () {
+//       topOfPage = $('#fullpage').position().top;
+//       if(topOfPage <= -$(document).height()){
+//         $("#25pie", "#33pie", "#93pie").attr("class", "video", "video2", "video3");
+//         $("#25pie", "#33pie", "#93pie").show();
+//       }
+//
+//       if (topOfPage <= -5*$(document).height()) {
+//
+//       }
+//     }, 1000);
+
+});
+
+
+</script>
+
+<!-- <div class="video">
+  <video id="piechart" width="35%" autoplay>
+    <source src="TransparentVideo.mov">
+</div> -->
+<div class="video" id="25pie">
+  <video width="55%" height=35%; autoplay>
+    <source src="videos/25pie(Converted).mov">
+    </div>
+<div class="video2" id="33pie">
+   <video width="55%" height=35%; autoplay>
+    <source src="videos/33pie(Converted).mov">
+    </div>
+<div class="video3" id="93pie">
+   <video width="55%" height=35%; autoplay>
+    <source src="videos/93pie(Converted).mov">
+</div>
+
+<div class="menu">
+<a href="#water"> <strong>home</strong><br><br>
+<a href="#bleachedreef"> timeline<br><br>
+<a href="#section3"> ocean acidification<br><br>
+<a href="#section4"> coral bleaching <br><br>
+<a href="section5"> section poo <br><br>
+</div>
+
+<div class="menu2">
+<a href="#water"> home<br><br>
+<a href="#bleachedreef"> <strong>timeline</strong><br><br>
+<a href="#section3"> ocean acidification<br><br>
+<a href="#section4"> coral bleaching <br><br>
+<a href="#section5"> section poo <br><br>
+</div>
+
+<div class="menu3">
+<a href="#water"> home<br><br>
+<a href="#bleachedreef"> timeline<br><br>
+<a href="#section3"> <strong>ocean acidification</strong><br><br>
+<a href="#section4"> coral bleaching <br><br>
+<a href="#section5"> section poo <br><br>
+</div>
+
+<div class="menu4">
+<a href="#water"> home<br><br>
+<a href="#bleachedreef"> timeline<br><br>
+<a href="#section3"> ocean acidification<br><br>
+<a href="#section4"> <strong>coral bleaching</strong> <br><br>
+<a href="#section5"> section poo <br><br>
+</div>
+
+<div class="menu5">
+<a href="#water"> home<br><br>
+<a href="#bleachedreef"> timeline<br><br>
+<a href="#section3"> ocean acidification<br><br>
+<a href="#section4"> coral bleaching <br><br>
+<a href="#section5"> <strong>section poo</strong> <br><br>
+</div>
+  </body>
+</html>
